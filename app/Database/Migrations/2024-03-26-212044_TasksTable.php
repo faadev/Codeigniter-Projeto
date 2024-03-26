@@ -36,7 +36,7 @@ class TasksTable extends Migration
                 'constraint' => '20',
                 'null' => true
             ],
-            'cretated_at' => [
+            'created_at' => [
                 'type' => 'DATETIME',
                 'null' => true
             ],

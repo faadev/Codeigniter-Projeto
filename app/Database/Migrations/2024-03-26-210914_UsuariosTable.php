@@ -26,7 +26,7 @@ class UsuariosTable extends Migration
                 'constraint' => '200',
                 'null' => true
             ],
-            'cretated_at' => [
+            'created_at' => [
                 'type' => 'DATETIME',
                 'null' => true
             ],

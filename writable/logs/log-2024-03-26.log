@@ -155,3 +155,173 @@ Stack trace:
 #9 C:\laragon\www\GestionDeTarefas\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
 #10 C:\laragon\www\GestionDeTarefas\spark(102): CodeIgniter\CLI\Console->run()
 #11 {main}
+ERROR - 2024-03-26 21:41:23 --> mysqli_sql_exception: Table 'ci_tasks.usuario' doesn't exist in C:\laragon\www\GestionDeTarefas\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\GestionDeTarefas\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\laragon\www\GestionDeTarefas\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\laragon\www\GestionDeTarefas\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\laragon\www\GestionDeTarefas\system\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', NULL, false)
+#4 C:\laragon\www\GestionDeTarefas\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\laragon\www\GestionDeTarefas\app\Database\Seeds\UsuariosSeeder.php(31): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\laragon\www\GestionDeTarefas\system\Database\Seeder.php(145): App\Database\Seeds\UsuariosSeeder->run()
+#7 C:\laragon\www\GestionDeTarefas\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\laragon\www\GestionDeTarefas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\laragon\www\GestionDeTarefas\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\laragon\www\GestionDeTarefas\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+CRITICAL - 2024-03-26 21:42:35 --> CodeIgniter\Exceptions\FrameworkException: The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 252.
+ 1 SYSTEMPATH\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+ 2 SYSTEMPATH\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(88): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-03-26 21:42:35 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\laragon\www\GestionDeTarefas\system\I18n\TimeTrait.php:74
+Stack trace:
+#0 C:\laragon\www\GestionDeTarefas\system\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct()
+#1 C:\laragon\www\GestionDeTarefas\system\HTTP\ResponseTrait.php(468): CodeIgniter\I18n\Time::now()
+#2 C:\laragon\www\GestionDeTarefas\system\HTTP\ResponseTrait.php(446): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\laragon\www\GestionDeTarefas\system\Debug\ExceptionHandler.php(81): CodeIgniter\HTTP\Response->send()
+#4 C:\laragon\www\GestionDeTarefas\system\Debug\Exceptions.php(156): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\laragon\www\GestionDeTarefas\system\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+#1 C:\laragon\www\GestionDeTarefas\system\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\laragon\www\GestionDeTarefas\spark(88): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-03-26 21:42:58 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\laragon\www\GestionDeTarefas\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\GestionDeTarefas\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\laragon\www\GestionDeTarefas\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\laragon\www\GestionDeTarefas\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\laragon\www\GestionDeTarefas\system\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', NULL, false)
+#4 C:\laragon\www\GestionDeTarefas\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\laragon\www\GestionDeTarefas\app\Database\Seeds\UsuariosSeeder.php(31): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\laragon\www\GestionDeTarefas\system\Database\Seeder.php(145): App\Database\Seeds\UsuariosSeeder->run()
+#7 C:\laragon\www\GestionDeTarefas\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\laragon\www\GestionDeTarefas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\laragon\www\GestionDeTarefas\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\laragon\www\GestionDeTarefas\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-03-26 21:44:26 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\laragon\www\GestionDeTarefas\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\GestionDeTarefas\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\laragon\www\GestionDeTarefas\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\laragon\www\GestionDeTarefas\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\laragon\www\GestionDeTarefas\system\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', NULL, false)
+#4 C:\laragon\www\GestionDeTarefas\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\laragon\www\GestionDeTarefas\app\Database\Seeds\UsuariosSeeder.php(31): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\laragon\www\GestionDeTarefas\system\Database\Seeder.php(145): App\Database\Seeds\UsuariosSeeder->run()
+#7 C:\laragon\www\GestionDeTarefas\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\laragon\www\GestionDeTarefas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\laragon\www\GestionDeTarefas\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\laragon\www\GestionDeTarefas\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-03-26 21:48:02 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\laragon\www\GestionDeTarefas\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\GestionDeTarefas\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\laragon\www\GestionDeTarefas\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\laragon\www\GestionDeTarefas\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\laragon\www\GestionDeTarefas\system\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', NULL, false)
+#4 C:\laragon\www\GestionDeTarefas\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\laragon\www\GestionDeTarefas\app\Database\Seeds\UsuariosSeeder.php(31): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\laragon\www\GestionDeTarefas\system\Database\Seeder.php(145): App\Database\Seeds\UsuariosSeeder->run()
+#7 C:\laragon\www\GestionDeTarefas\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\laragon\www\GestionDeTarefas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\laragon\www\GestionDeTarefas\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\laragon\www\GestionDeTarefas\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-03-26 21:50:44 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\laragon\www\GestionDeTarefas\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\GestionDeTarefas\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\laragon\www\GestionDeTarefas\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\laragon\www\GestionDeTarefas\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\laragon\www\GestionDeTarefas\system\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', NULL, false)
+#4 C:\laragon\www\GestionDeTarefas\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\laragon\www\GestionDeTarefas\app\Database\Seeds\UsuariosSeeder.php(31): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\laragon\www\GestionDeTarefas\system\Database\Seeder.php(145): App\Database\Seeds\UsuariosSeeder->run()
+#7 C:\laragon\www\GestionDeTarefas\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\laragon\www\GestionDeTarefas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\laragon\www\GestionDeTarefas\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\laragon\www\GestionDeTarefas\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-03-26 21:53:35 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\laragon\www\GestionDeTarefas\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\GestionDeTarefas\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\laragon\www\GestionDeTarefas\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\laragon\www\GestionDeTarefas\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\laragon\www\GestionDeTarefas\system\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', NULL, false)
+#4 C:\laragon\www\GestionDeTarefas\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\laragon\www\GestionDeTarefas\app\Database\Seeds\UsuariosSeeder.php(30): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\laragon\www\GestionDeTarefas\system\Database\Seeder.php(145): App\Database\Seeds\UsuariosSeeder->run()
+#7 C:\laragon\www\GestionDeTarefas\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\laragon\www\GestionDeTarefas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\laragon\www\GestionDeTarefas\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\laragon\www\GestionDeTarefas\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+CRITICAL - 2024-03-26 21:56:12 --> CodeIgniter\Exceptions\FrameworkException: The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 252.
+ 1 SYSTEMPATH\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+ 2 SYSTEMPATH\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(88): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-03-26 21:56:12 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\laragon\www\GestionDeTarefas\system\I18n\TimeTrait.php:74
+Stack trace:
+#0 C:\laragon\www\GestionDeTarefas\system\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct()
+#1 C:\laragon\www\GestionDeTarefas\system\HTTP\ResponseTrait.php(468): CodeIgniter\I18n\Time::now()
+#2 C:\laragon\www\GestionDeTarefas\system\HTTP\ResponseTrait.php(446): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\laragon\www\GestionDeTarefas\system\Debug\ExceptionHandler.php(81): CodeIgniter\HTTP\Response->send()
+#4 C:\laragon\www\GestionDeTarefas\system\Debug\Exceptions.php(156): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\laragon\www\GestionDeTarefas\system\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+#1 C:\laragon\www\GestionDeTarefas\system\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\laragon\www\GestionDeTarefas\spark(88): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-26 21:58:22 --> CodeIgniter\Exceptions\FrameworkException: The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 252.
+ 1 SYSTEMPATH\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+ 2 SYSTEMPATH\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(88): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-03-26 21:58:22 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\laragon\www\GestionDeTarefas\system\I18n\TimeTrait.php:74
+Stack trace:
+#0 C:\laragon\www\GestionDeTarefas\system\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct()
+#1 C:\laragon\www\GestionDeTarefas\system\HTTP\ResponseTrait.php(468): CodeIgniter\I18n\Time::now()
+#2 C:\laragon\www\GestionDeTarefas\system\HTTP\ResponseTrait.php(446): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\laragon\www\GestionDeTarefas\system\Debug\ExceptionHandler.php(81): CodeIgniter\HTTP\Response->send()
+#4 C:\laragon\www\GestionDeTarefas\system\Debug\Exceptions.php(156): CodeIgniter\Debug\ExceptionHandler->handle()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\laragon\www\GestionDeTarefas\system\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+#1 C:\laragon\www\GestionDeTarefas\system\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\laragon\www\GestionDeTarefas\spark(88): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-03-26 22:00:44 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\laragon\www\GestionDeTarefas\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\GestionDeTarefas\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\laragon\www\GestionDeTarefas\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\laragon\www\GestionDeTarefas\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\laragon\www\GestionDeTarefas\system\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', NULL, false)
+#4 C:\laragon\www\GestionDeTarefas\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\laragon\www\GestionDeTarefas\app\Database\Seeds\UsuariosSeeder.php(30): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\laragon\www\GestionDeTarefas\system\Database\Seeder.php(145): App\Database\Seeds\UsuariosSeeder->run()
+#7 C:\laragon\www\GestionDeTarefas\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\laragon\www\GestionDeTarefas\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\laragon\www\GestionDeTarefas\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\laragon\www\GestionDeTarefas\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
