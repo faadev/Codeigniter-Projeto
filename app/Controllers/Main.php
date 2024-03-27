@@ -11,17 +11,7 @@ class Main extends BaseController
 {
     public function index()
     {
-        // $model_usuarios = new UsuariosModel(db_connect());
-        //$usuarios = $model_usuarios->findAll();
-        //dd($usuarios); ou
-        //echo '<pre>';
-        //print_r($usuarios);
-
-        //tasks
-        //$model_tasks = new TasksModel();
-        // $tasks = $model_tasks->findAll();
-        //dd($tasks);
-        return view('test');
+        //index
     }
     public function login()
     {
@@ -29,6 +19,38 @@ class Main extends BaseController
     }
     public function login_submit()
     {
-        echo 'login submit';
+
+        //Validation Use
+        $validation = $this->validate(
+            //validation rules
+            [
+                'text_usuario' => 'required',
+                'text_senha' => 'required',
+            ],
+            [
+                'text_usuario' => [
+                    'required' => 'O campo usuario é obrigatorio'
+                ],
+                'text_senha' => [
+                    'required' => 'O campo senha é obrigatorio'
+                ]
+            ]
+        );
+        if (!$validation) {
+            return redirect()->to('login')->withInput()->with('validation_errors', $this->validator->getErrors());
+        }
+
+        //Buscar dados do usuario
+        $usuario = $this->request->getPost('text_usuario');
+        $senha = $this->request->getPost('text_senha');
+        dd([$usuario, $senha]);
+
+
+        //  if (empty($usuario) || empty($senha)) {
+        //return redirect()->to('login')->withInput()->with('error', 'Usuario e senha obrigatorios');
     }
+    //echo 'Usuario: ' . $usuario . '<br>';
+    //echo 'Senha: ' . $senha . '<br>';
+
+    //commo fazemos para validar usuario e a senha?
 }
