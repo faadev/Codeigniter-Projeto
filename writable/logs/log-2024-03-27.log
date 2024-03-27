@@ -1,0 +1,75 @@
+CRITICAL - 2024-03-27 13:21:37 --> Error: Class "App\Models\TasksModel" not found
+in APPPATH\Controllers\Main.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 13:21:43 --> Error: Class "App\Models\TasksModel" not found
+in APPPATH\Controllers\Main.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 13:33:15 --> ParseError: syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\Main.php on line 25.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\GestionDeTarefas\\app\\Controllers\\Main.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Main')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Main')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Main', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 13:44:33 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "test.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('test.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('test', [], true)
+ 3 APPPATH\Controllers\Main.php(24): view('test')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 20:44:31 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "test.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('test.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('test', [], true)
+ 3 APPPATH\Controllers\Main.php(24): view('test')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 20:48:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "test.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('test.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('test', [], true)
+ 3 APPPATH\Controllers\Main.php(24): view('test')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 20:49:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "login_submit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login_submit.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('login_submit', [], true)
+ 3 APPPATH\Controllers\Main.php(32): view('login_submit')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->login_submit()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 20:50:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "login_submit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login_submit.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('login_submit', [], true)
+ 3 APPPATH\Controllers\Main.php(32): view('login_submit')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->login_submit()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-27 20:51:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "login_submit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login_submit.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('login_submit', [], true)
+ 3 APPPATH\Controllers\Main.php(32): view('login_submit')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->login_submit()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
